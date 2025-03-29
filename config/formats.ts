@@ -30,7 +30,6 @@ export const Formats: FormatList = [
 		teambuilderFormat: "National Dex",
 		ruleset: [
 			"Standard NatDex",
-			"OHKO Clause",
 			"Evasion Moves Clause",
 			"Species Clause",
 			"Dynamax Clause",
