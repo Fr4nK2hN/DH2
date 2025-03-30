@@ -30,25 +30,9 @@ export const Formats: FormatList = [
 		teambuilderFormat: "National Dex",
 		ruleset: [
 			"Standard NatDex",
-			"Evasion Moves Clause",
-			"Species Clause",
-			"Dynamax Clause",
 			"Data Mod",
-			"Sleep Clause Mod",
-			"Terastal Clause",
 			"Mega Data Mod",
 		],
-		onValidateTeam(team, format) {
-			/**@type {{[k: string]: true}}*/
-			let speciesTable = {};
-			let allowedTiers = ["FC OU"];
-			for (const set of team) {
-				let template = this.dex.species.get(set.species);
-				if (!allowedTiers.includes(template.tier)) {
-					return [set.species + " is not legal in Fantasy."];
-				}
-			}
-		},
 	},
 	///////////////////////////////////////////////////////////////
 	///////////////////// Gen 9 Pet Mods //////////////////////////

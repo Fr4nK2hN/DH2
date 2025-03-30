@@ -6,5 +6,6 @@ export const Pokedex: { [k: string]: ModdedSpeciesData } = {
 		types: ["Dragon", "Ground"],
 		baseStats: { hp: 108, atk: 140, def: 95, spa: 80, spd: 85, spe: 112 },
 		abilities: { 0: "Rough Skin", H: "Sand Force" },
+		spriteid: "garchomp",
 	},
 };
